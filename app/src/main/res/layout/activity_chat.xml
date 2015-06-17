@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:background="@android:color/darker_gray">
+    <!-- Toolbar -->
+    <include layout="@layout/toolbar_actionbar"/>
+
+    <fragment
+        android:name="tw.binary.dipper.message.MessageFragment"
+        android:id="@+id/msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        tools:layout="@layout/chat_list_item"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/send_btn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/send"/>
+
+        <EditText
+            android:id="@+id/msg_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/send_btn"
+            android:layout_toLeftOf="@+id/send_btn"
+            android:inputType="textWebEditText">
+        </EditText>
+    </RelativeLayout>
+
+</LinearLayout>

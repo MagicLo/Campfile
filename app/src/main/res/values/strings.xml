@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Campfire</string>
+    <string name="welcome_text">歡迎使用Campfire</string>
+    <string name="eula_title">服務條款</string>
+    <string name="title_section1">發現</string>
+    <string name="title_section2">尋找</string>
+    <string name="title_section3">如何使用</string>
+    <string name="title_section4">登入/註冊</string>
+    <string name="system_processing">處理中</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">action</string>
+    <string name="action_example2">action2</string>
+    <string name="action_example3">action3</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_settings2">Settings2</string>
+    <string name="action_settings3">Settings3</string>。。。。。
+    <string name="navigationMenuAd">發現</string>
+    <string name="navdrawer_item_home">發現</string>
+    <string name="navigationMenuSearch">尋找</string>
+    <string name="navigationMenuPlan">您的旅程</string>
+    <string name="navigationMenuInbox">收件箱</string>
+    <string name="ok">確定</string>
+    <string name="save">存檔</string>
+    <!-- <string name="navigationmenu4">好康團購</string> -->
+    <string name="navigationMenuResStatus">出租狀況</string>
+    <string name="navdrawer_item_res_cal">出租狀況</string>
+    <string name="navigationMenuResSetup">出租設定</string>
+    <string name="navdrawer_item_res_list">出租設定</string>
+    <string name="navdrawer_item_res_edit">出租明細設定</string>
+    <string name="navigationMenuPref">常用設定</string>
+    <string name="navdrawer_item_prefs">常用設定</string>
+    <string name="navdrawer_item_getmaps">地圖設定</string>
+    <string name="navdrawer_item_account">我的帳戶</string>
+    <string name="navdrawer_item_weather">天氣預報</string>
+    <string name="navdrawer_item_message">留言板</string>
+    <!-- 要改用引用navdraw_item  -->
+    <string name="title_get_maps_activity">地圖設定</string>
+    <string name="title_res_pic_edit_activity">圖片編輯</string>
+    <string name="title_maps_activity">Map</string>
+    <string name="title_res_detail_activity">營位設定</string>
+
+    <!-- <string name="navigationmenu8">Help</string> -->
+    <string name="navigationMenuLogin">登入或註冊帳號</string>
+    <string name="navdrawer_item_sign_in">登入或註冊帳號</string>
+    <string name="navigationMenuEnd">結束</string>
+    <string name="loading">資料更新中</string>
+    <string name="yahooapi_failed">匯率資料更新失敗</string>
+    <string name="init_failed">起始階段錯誤</string>
+
+    <!-- DB -->
+    <string name="dbname">polaris</string>
+
+    <string name="fbapp_id">310964125674548</string>
+
+    <!-- Google API Key -->
+    <string name="google_maps_key">AIzaSyC7wdQK8YCu6KhQzWeWvYh0F1pDOmg8Z_s</string>
+
+    <!-- 給gcm用 -->
+    <string name="gae_project_number">789806255860</string>;
+    <string name="gae_server_api_key">AIzaSyDkkvHbu8Dek1SzsAe13MBEFWtvfBnsTJM</string>
+    <string name="notification_id">6255860</string>
+    <string name="server_endpoint">https://graceful-design-89523.appspot.com/m</string>
+
+    <!-- Button text -->
+    <string name="btn_logout_from_google">Logout from Google</string>
+    <string name="btn_revoke_access">Revoke Access</string>
+
+    <!-- ActionBar Text -->
+    <string name="take_picture">相機</string>
+    <string name="browse_picture">圖庫</string>
+    <string name="remove_resource">刪除資料</string>
+    <string name="remove_picture">刪除照片</string>
+
+    <!-- Resource Pic Edit Act -->
+    <string name="hsv_intro">使用工具列增加圖片！</string>
+    <string name="hsv_removeintro">長按小圖可刪除</string>
+    <string name="Dlg_message">確定要刪除選擇的資料嗎？</string>
+    <string name="Dlg_title">警告</string>
+
+    <!-- ResDetailActivity -->
+    <string name="res_nav">導航</string>
+    <string name="locationIsNotAvailable">無法取得目前位置</string>
+    <string name="navigationIsNotAvailable">本裝置無導航服務</string>
+    <string name="successfulUpdate">存檔成功</string>
+    <string name="failureUpdate">存檔失敗</string>
+    <string name="eraseResourceError">資料清除有誤</string>
+    <string name="swPublish">對外公開</string>
+    <string name="tbPublishedOn">公    開</string>
+    <string name="tbPublishedOff">不 公 開</string>
+
+    <!-- SplashActivity -->
+    <string name="NoNetworkConnection">無網路服務</string>
+
+    <!-- YesNoDialog Fragment -->
+    <string name="Dialog_Yes">確    定</string>
+    <string name="Dialog_Cancel">取    消</string>
+
+    <!-- LoginActivity -->
+    <string name="Login_progress">登入中</string>
+    <string name="LoginActivityName">登入/出</string>
+
+
+    <!-- GetMapsActivity -->
+    <string name="GetCurrentLocation">GPS定位</string>
+
+    <!-- get_map_menu -->
+    <string name="mapTypeNormal">一般</string>
+    <string name="mapTypeSatellite">衛星</string>
+    <string name="mapTypeTerrain">地形</string>
+    <string name="mapTypeHybrid">混合</string>
+    <string name="mapTypeNone">無</string>
+
+    <!-- LoginAndAuthHelper -->
+    <string name="splash_dialog_body"><![CDATA[
+        This demo app is for educational purposes only.<br><br>
+        <a href="https://abelana-222.appspot.com/tos.html">Terms of Service</a><br><br>
+        <a href="https://abelana-222.appspot.com/privacy.html">Privacy Policy</a>
+    ]]></string>
+    <string name="splash_dialog_title">@string/app_name</string>
+    <string name="login_fail">您尚未登入</string>
+
+    <!-- drawer_base_menu -->
+    <string name="finish">結束</string>
+    <string name="logout">登出</string>
+    <string name="about">@string/app_name</string>
+
+    <!-- activity_account -->
+    <string name="accountName">姓名</string>
+    <string name="accountEmail">電子郵件</string>
+    <string name="accountPhone">聯絡電話</string>
+    <string name="accountAddress">聯絡地址</string>
+    <string name="title_activity_weather">WeatherActivity</string>
+    <string name="title_activity_caller_list">CallerListActivity</string>
+
+    <!-- activity_chat.xml -->
+    <string name="send">傳送</string>
+
+    <!-- GcmBroadcastHandler.java -->
+    <string name="youGotMail">您有新留言</string>
+</resources>

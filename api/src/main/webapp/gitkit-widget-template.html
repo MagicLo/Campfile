@@ -1,0 +1,91 @@
+<script type="text/javascript" src="//www.gstatic.com/authtoolkit/js/gitkit.js"></script>
+<link type="text/css" rel="stylesheet" href="//www.gstatic.com/authtoolkit/css/gitkit.css"/>
+<script type="text/javascript">
+  var config = {
+      apiKey: 'AIzaSyAfArNl_B45xEk0dM6wOhoUPgfVielVpiU',
+      signInSuccessUrl: '/',
+      idps: ["googleplus", "yahoo", "facebook"],
+      idpButtons: 2,
+      oobActionUrl: '/m',
+      siteName: 'this site'
+  };
+  // The HTTP POST body should be escaped by the server to prevent XSS
+  window.google.identitytoolkit.start(
+      '#gitkitWidgetDiv', // accepts any CSS selector
+      config,
+      'JAVASCRIPT_ESCAPED_POST_BODY');
+
+
+
+
+
+</script>
+
+
+AIzaSyAfArNl_B45xEk0dM6wOhoUPgfVielVpiU
+
+
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+<script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/googleapis/0.0.4/googleapis.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/jsapi"></script>
+<script type="text/javascript">
+   google.load("identitytoolkit", "1.0", {packages: ["ac"]});
+
+
+
+
+
+</script>
+<script type="text/javascript">
+$(function(){
+  window.google.identitytoolkit.setConfig({
+    developerKey: "AIzaSyAfArNl_B45xEk0dM6wOhoUPgfVielVpiU",
+    companyName: "Campfire",
+    callbackUrl: "http://localhost/callback", // must be a full URL
+    userStatusUrl: "/userStatus", // these can just be partial paths
+    loginUrl: "/login",
+    signupUrl: "/signup",
+    homeUrl: "/home",
+    logoutUrl: "/logout",
+    realm: "", // optional
+    language: "zh-TW",
+    idps: ["Gmail", "AOL", "Hotmail", "Yahoo"],
+    tryFederatedFirst: true,
+    useCachedUserStatus: false
+  });
+  $('#navbar').accountChooser();
+});
+
+
+
+
+
+</script>
+
+
+<script type="text/javascript">
+function load() {
+  var config = {
+      apiKey: 'AIzaSyAfArNl_B45xEk0dM6wOhoUPgfVielVpiU',
+      signInSuccessUrl: '/',
+      idps: ["Gmail", "yahoo", "facebook"],
+      idpButtons: 1,
+      oobActionUrl: '/m',
+      siteName: 'Campfire'
+  };
+  // The HTTP POST body should be escaped by the server to prevent XSS
+  window.google.identitytoolkit.start(
+      '#gitkitWidgetDiv', // accepts any CSS selector
+      config);
+
+}
+
+
+
+
+
+</script>

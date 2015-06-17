@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_actionbar"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/llayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/mainimagelayout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_shadow">
+
+                <ImageView
+                    android:id="@+id/imgMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/resource_image_high"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/camera_plus_icon2"
+                    android:scaleType="fitCenter"
+                    android:background="@color/caldroid_gray"
+                    android:baselineAlignBottom="true"
+                    android:cropToPadding="true"/>
+
+                <TextView
+                    android:id="@+id/tvDay2L"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgMain"
+                    android:layout_centerHorizontal="true"
+                    android:padding="15dp"
+                    android:text="點擊圖片更新"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/scrumptious_main_orange"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_shadow"
+                android:backgroundTint="@color/white"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_ResTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:autoText="true"
+                    android:text="一個很吸引人的標題"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tv_EditTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingTop="5dp"
+                    android:text="編輯標題"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/scrumptious_main_orange"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_shadow"
+                android:backgroundTint="@color/white"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_ResDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoText="true"
+                    android:text="描述說明"
+                    android:textIsSelectable="true"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/tv_EditDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingTop="5dp"
+                    android:text="編輯描述"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/scrumptious_main_orange"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_shadow"
+                android:elevation="5dp"
+                android:orientation="vertical">
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.MapFragment"
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvGetMaps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="onClick"
+                    android:padding="5dp"
+                    android:text="編輯地址"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/scrumptious_main_orange"/>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_shadow"
+                android:elevation="5dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="營位說明"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/divider1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView"
+                    android:background="#100000"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+                <!-- android:background="#DADADA" -->
+
+                <TextView
+                    android:id="@+id/tvDay2H"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/divider1"
+                    android:text="便利設施"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <TextView
+                    android:id="@+id/tvDay3H"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="false"
+                    android:layout_below="@+id/tvDay2H"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingTop="5dp"
+                    android:text="編輯詳述"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/scrumptious_main_orange"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/background_shadow"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ToggleButton
+                    android:id="@+id/tbPublished"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textOff="@string/tbPublishedOff"
+                    android:textOn="@string/tbPublishedOn"/>
+
+                <Switch
+                    android:id="@+id/swPublished"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/swPublish"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:clickable="false"
+                    android:elegantTextHeight="true"
+                    android:elevation="50dp"
+                    android:enabled="false"
+                    android:text="儲   存"
+                    android:translationZ="5dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

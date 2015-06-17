@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+        <!-- Toolbar -->
+        <include layout="@layout/toolbar_actionbar"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateOnly="true"
+            style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+            />
+
+        <ListView
+            android:id="@+id/lvCallerList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <!-- Nav drawer -->
+    <include layout="@layout/navdrawer"/>
+
+</android.support.v4.widget.DrawerLayout>

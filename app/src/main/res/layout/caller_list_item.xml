@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/person_image_empty_64"
+        android:paddingRight="5dp"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:layout_toRightOf="@+id/photo"
+        android:text="John Dole"
+        />
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="1 new message"
+        android:layout_toRightOf="@+id/photo"
+        android:layout_alignBottom="@+id/photo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="4:19 PM"
+        android:id="@+id/sentTime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/photo"
+        />
+
+    <TextView
+        android:id="@+id/fromLocalId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/displayName"
+        android:layout_toRightOf="@+id/photo"
+        android:visibility="invisible"
+        android:singleLine="true"
+        android:text="fromLocalId"/>
+
+</RelativeLayout>

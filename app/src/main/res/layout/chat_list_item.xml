@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="5dp">
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/ivPhotoLeft"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/person_image_empty_48"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/llMessage"
+        android:layout_alignParentStart="false">
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/message_box_origin"
+            android:layout_alignParentEnd="false"
+            android:singleLine="false"
+            android:layout_alignParentBottom="false"
+            android:text="Message"
+            android:maxWidth="240dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/tvSentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="11sp"
+            android:text="12:00"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:id="@+id/ivPhotoRight"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/person_image_empty_48"
+        />
+
+</RelativeLayout>

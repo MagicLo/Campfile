@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <!-- Main layout -->
+    <RelativeLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar_actionbar"
+            android:id="@+id/toolbar_actionbar"/>
+        <!-- placeholder, empty except on L -->
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/toolbar_actionbar">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layout_gravity="top|center"
+                          android:orientation="vertical"
+                          android:focusable="true"
+                          android:focusableInTouchMode="true">
+
+                <ImageView
+                    android:id="@+id/ivPhotoLeft"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:layout_gravity="center_horizontal"
+                    android:longClickable="true"
+                    android:padding="5dp"
+                    android:src="@drawable/person_image_empty"/>
+
+                <TextView
+                    android:id="@+id/tvDay4H"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/accountName"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <EditText
+                    android:id="@+id/etDisplayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="textPersonName"
+                    android:focusable="false"
+                    android:textIsSelectable="false"
+                    android:gravity="center"
+                    android:ems="15"/>
+
+                <TextView
+                    android:id="@+id/tvDay4L"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/accountEmail"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="15"
+                    android:inputType="textEmailAddress"
+                    android:focusable="false"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/accountPhone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <EditText
+                    android:id="@+id/etPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:inputType="phone"
+                    android:ems="15"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/accountAddress"
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <EditText
+                    android:id="@+id/etAddtess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:layout_gravity="center_horizontal"
+                    android:ems="15"
+                    android:inputType="textPostalAddress"
+                    android:gravity="center"
+                    android:nestedScrollingEnabled="true"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/save"
+                    android:id="@+id/btSave"
+                    android:layout_gravity="center_horizontal"
+                    android:onClick=""
+                    android:layout_alignParentBottom="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="20dp"
+                    android:layout_below="@+id/scrollView"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="RegID"
+                    android:id="@+id/tvRegId"
+                    android:gravity="center"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="LocalID"
+                    android:id="@+id/tvLocalId"
+                    android:gravity="center"
+                    android:visibility="invisible"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <!-- Nav drawer -->
+    <include layout="@layout/navdrawer"/>
+
+</android.support.v4.widget.DrawerLayout>

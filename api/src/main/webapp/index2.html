@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test</title>
+    <script type="text/javascript" src="//www.gstatic.com/authtoolkit/js/gitkit.js"></script>
+    <link type=text/css rel=stylesheet href="//www.gstatic.com/authtoolkit/css/gitkit.css"/>
+    <script type=text/javascript>
+          window.google.identitytoolkit.signInButton(
+            '#navbar', // accepts any CSS selector
+            {
+              widgetUrl: "http://localhost:8080/gitkit",
+              signOutUrl: "/",
+            }
+          );
+
+
+
+
+
+    </script>
+</head>
+<body>
+<!-- Begin sign in button widget -->
+<div id="navbar"></div>
+<!-- End sign in button widget -->
+</body>
+</html>

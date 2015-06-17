@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tent14"
+        android:scaleType="fitStart"
+        android:layout_height="80dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="環境優美露營地"
+        android:id="@+id/tvTitle"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:textSize="25dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="數量1"
+        android:id="@+id/tvQty"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_alignStart="@+id/tvTitle"
+        android:layout_alignRight="@+id/tvTitle"
+        android:layout_alignEnd="@+id/tvTitle"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="已上傳"
+        android:id="@+id/tvPublished"
+        android:layout_alignBottom="@+id/tvQty"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/tvTitle"
+        android:layout_toEndOf="@+id/tvTitle"/>
+</RelativeLayout>

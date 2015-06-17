@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_horizontal">
+
+    <include layout="@layout/toolbar_actionbar"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/resource_image_high"
+        android:id="@+id/imgMain"
+        android:adjustViewBounds="true"
+        android:background="@color/caldroid_gray"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera_plus_icon2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hsv_intro"
+        android:layout_gravity="center_horizontal"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/resource_pic_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/hsv_removeintro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

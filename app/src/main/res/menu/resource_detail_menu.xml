@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/res_nav"
+        android:title="@string/res_nav"
+        android:icon="@drawable/ic_navigation_white_48dp"
+        app:showAsAction="always"
+        android:orderInCategory="100"/>
+    <item
+        android:id="@+id/remove_resource"
+        android:title="@string/remove_resource"
+        android:icon="@drawable/ic_action_remove"
+        app:showAsAction="always"
+        android:orderInCategory="200"/>
+</menu>

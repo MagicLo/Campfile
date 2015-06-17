@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <include layout="@layout/toolbar_actionbar"/>
+        <!-- Google Map -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.MapFragment"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#88000000"
+                android:baselineAligned="true"
+                android:layout_alignParentTop="true">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sun"
+                        android:id="@+id/tvDay0"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:id="@+id/imageDay0"
+                        android:src="@drawable/weather_cloudy"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tvDay0"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="30"
+                        android:id="@+id/tvDay0H"
+                        android:layout_below="@+id/imageDay0"
+                        android:layout_alignParentLeft="false"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="20"
+                        android:id="@+id/tvDay0L"
+                        android:layout_alignParentRight="false"
+                        android:layout_below="@+id/tvDay0H"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/blue"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sun"
+                        android:id="@+id/tvDay1"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentTop="true"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:id="@+id/imageDay1"
+                        android:src="@drawable/weather_cloudy"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tvDay1"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="30"
+                        android:id="@+id/tvDay1H"
+                        android:layout_below="@+id/imageDay1"
+                        android:layout_alignParentLeft="false"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="20"
+                        android:id="@+id/tvDay1L"
+                        android:layout_below="@+id/tvDay1H"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentRight="false"
+                        android:layout_alignParentTop="false"
+                        android:textColor="@color/blue"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sun"
+                        android:id="@+id/tvDay2"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentTop="true"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:id="@+id/imageDay2"
+                        android:src="@drawable/weather_cloudy"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tvDay2"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="30"
+                        android:id="@+id/tvDay2H"
+                        android:layout_alignParentRight="false"
+                        android:layout_below="@+id/imageDay2"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="20"
+                        android:id="@+id/tvDay2L"
+                        android:layout_below="@+id/tvDay2H"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/blue"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sun"
+                        android:id="@+id/tvDay3"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentTop="true"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:id="@+id/imageDay3"
+                        android:src="@drawable/weather_cloudy"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/tvDay3"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="30"
+                        android:id="@+id/tvDay3H"
+                        android:layout_alignParentRight="false"
+                        android:layout_below="@+id/imageDay3"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="20"
+                        android:id="@+id/tvDay3L"
+                        android:layout_below="@+id/tvDay3H"
+                        android:layout_alignParentLeft="false"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/blue"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Sun"
+                        android:id="@+id/tvDay4"
+                        android:gravity="center_horizontal"
+                        android:layout_alignParentTop="true"
+                        android:textColor="@color/white"/>
+
+                    <ImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:id="@+id/imageDay4"
+                        android:src="@drawable/weather_cloudy"
+                        android:layout_below="@+id/tvDay4"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="30"
+                        android:id="@+id/tvDay4H"
+                        android:layout_below="@+id/imageDay4"
+                        android:layout_alignParentLeft="false"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="20"
+                        android:id="@+id/tvDay4L"
+                        android:layout_alignParentRight="false"
+                        android:layout_below="@+id/tvDay4H"
+                        android:gravity="center_horizontal"
+                        android:textColor="@color/blue"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!-- Nav drawer -->
+
+    <include layout="@layout/navdrawer"/>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="2.5">
+    <!-- For Objectify -->
+    <filter>
+        <filter-name>ObjectifyFilter</filter-name>
+        <filter-class>com.googlecode.objectify.ObjectifyFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>ObjectifyFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <!-- 20150515新增，用途是為了註冊 Entity classes with the ObjectifyService，可以取代上一行的filter-mapping-->
+    <!--
+    <listener>
+        <listener-class>tw.binary.dipper.api.servlet.OfyHelper</listener-class>
+    </listener>
+    -->
+    <!-- For Objectify -->
+    <servlet>
+        <servlet-name>SystemServiceServlet</servlet-name>
+        <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
+        <init-param>
+            <param-name>services</param-name>
+            <param-value>tw.binary.dipper.api.MyEndpoint,
+                tw.binary.dipper.api.MyResourceEndpoint,
+                tw.binary.dipper.api.CFUserEndpoint, tw.binary.dipper.api.GcmMessageEndpoint,
+                tw.binary.dipper.api.ResourceImageEndpoint
+            </param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SystemServiceServlet</servlet-name>
+        <url-pattern>/_ah/spi/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- html -->
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!--  -->
+    <servlet>
+        <servlet-name>GitKitServlet</servlet-name>
+        <servlet-class>tw.binary.dipper.api.servlet.GitKitServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GitKitServlet</servlet-name>
+        <url-pattern>/g/*</url-pattern>
+    </servlet-mapping>
+
+    <!-- 給Google Cloud Message 用的 -->
+    <servlet>
+        <servlet-name>GcmMessageServlet</servlet-name>
+        <servlet-class>tw.binary.dipper.api.servlet.GcmMessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GcmMessageServlet</servlet-name>
+        <url-pattern>/m</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>

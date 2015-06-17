@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.1.0'
+    defaultConfig {
+        applicationId "tw.binary.dipper"
+        minSdkVersion 15
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    jcenter()
+    //mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //compile project(':facebook')
+    compile project(':caldroid')
+    compile project(path: ':api', configuration: 'android-endpoints')
+    compile(name: 'identitytoolkit-api11', ext: 'aar')
+    compile(name: 'identitytoolkit_fb', ext: 'jar')
+
+    compile 'com.android.support:recyclerview-v7:21.0.3'
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.android.support:cardview-v7:22.0.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    //compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.google.android.gms:play-services-gcm:7.3.0'
+    compile 'com.google.android.gms:play-services-maps:7.3.0'
+    compile 'com.google.apis:google-api-services-storage:v1-rev28-1.19.1'
+    compile 'com.google.apis:google-api-services-gmail:v1-rev28-1.20.0'
+    compile 'com.google.api-client:google-api-client:1.19.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.facebook.android:facebook-android-sdk:3.20.0'
+    compile 'com.makeramen:roundedimageview:2.0.1'
+    compile 'com.github.satyan:sugar:1.3'
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+
+    //compile 'com.google.identitytoolkit:gitkitclient:1.2.2'
+
+}
+
+//https://github.com/johncarl81/parceler

@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowActionModeOverlay">true</item>
+        <!--<item name="android:actionModeCloseDrawable"></item>-->
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="actionBarIconColor">#fff</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="ActionBarThemeOverlay" parent="">
+        <item name="android:textColorPrimary">#fff</item>
+        <item name="colorControlNormal">?actionBarIconColor</item>
+        <item name="colorControlHighlight">#3fff</item>
+        <item name="android:textColorSecondary">#3fff</item>
+
+    </style>
+
+    <style name="ActionBarPopupThemeOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <!--<style name="ActionBar.TitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#fff</item>
+        <item name="android:textSize">18sp</item>
+
+    </style>-->
+
+</resources>
